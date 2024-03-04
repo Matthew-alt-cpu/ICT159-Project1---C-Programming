@@ -8,7 +8,7 @@ int ComputeAU10(int CurrencyAU[], int SIZE, int Choice[0]);
 
 int ComputeAU5(int CurrencyAU[], int SIZE, int Choice[0]);
 
-# COmputeEU.h
+# ComputeEU.h
 
 int ComputeEU20(int CurrencyEuro[], int SIZE, int Choice[0]);
 
