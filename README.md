@@ -84,17 +84,29 @@ Revisions to Algorithm are Noted in Red
 8)	Divide the total input amount by the greatest amount in the currency and set the new “x” to be a subtraction by the greatest amount times the allocated variable
    
 -	Work down with the other amounts in descending order (This is to allow for the Minimum number of coins to be given as the higher amounts are processed first)
+
 -	Input Amount “x” 
-a = x/Coin50          |  a = 85/50    a = 1
-x = x – (Coin50 * a)  |  x = x –(50*1)    x = 35
+
+
+		a = x/Coin50          |  a = 85/50    a = 1
+
+		x = x – (Coin50 * a)  |  x = x –(50*1)    x = 35
+
 (Revised, run a check if b, c, d, > 0 if true set to 0)
-b = x/Coin20          |   b = 35/20    b = 1
-x = x – (Coin20 * b)  |   x = x – (20*1)  x = 15  
+
+		b = x/Coin20          |   b = 35/20    b = 1
+
+		x = x – (Coin20 * b)  |   x = x – (20*1)  x = 15  
+
 -	Check if c, d, > 0 if true set to 0)
   
-c = x/Coin10          |   c = 15/10    c = 1
-x = x – (Coin10 * c)  |   x = x –(10*1)x = 5    
-d = x/Coin5           |   d = 5/5      d = 1
+
+		c = x/Coin10          |   c = 15/10    c = 1
+
+		x = x – (Coin10 * c)  |   x = x –(10*1)x = 5    
+
+		d = x/Coin5           |   d = 5/5      d = 1
+
 -	x= 0 (Possibly unnecessary but better to set the integer to a value that won’t interfere) 
 
 9)	a, b, c, d <- Store the results of each variable
@@ -172,11 +184,11 @@ This file will hold the 4 functions for the AU Currency Type
   
 6)	If False perform equation:
    
-a = x / Coin50
+		a = x / Coin50
 
-x = x –(Coin50*a)
+		x = x –(Coin50*a)
 
-return(a)
+		return(a)
 
 The ComputeAU.c File has 3 other functions within it that Function the same way as the AU50 Function, (AU20, AU10, AU5). The Function is easily reusable with only slight changes to the variables and the amounts used.
 
@@ -199,11 +211,11 @@ The file will hold the 4 functions for the US Currency Type
   
 6)	If False perform equation:
    
-e = x / Coin50
+		e = x / Coin50
 
-x = x –(Coin50*e)
+		x = x –(Coin50*e)
 
-return(e)
+		return(e)
 
 All 3 of the separate files can easily run the same formula with only the slight changes to the variables and the Coin Amounts. This File also holds the 3 other ComputeUS Functions, (US25, US10, US1).
 
@@ -225,11 +237,11 @@ The file will hold the 4 functions for the US Currency Type
   
 6)	If False perform equation:
  	
-k = x / Coin20
+		k = x / Coin20
 
-x = x –(Coin20*k)
+		x = x –(Coin20*k)
 
-return(k)
+		return(k)
 
 These 3 functions also have their chosen Currency-Type stored in an array and passed to them as parameter. Once again this file hold the 3 other functions of the ComputeEU Currency Type, (EU25, EU10, EU5, EU1)
 
@@ -275,8 +287,10 @@ Test Input 2: 50
 8)	Divide the total input amount by the greatest amount in the currency and set the new “x” to be a subtraction by the greatest amount times allocated variable
    
 -	Input Amount “x” 
-                       a = x/Coin50             |       a = 50/50    a = 1
-       x = x (Coin50*a)       |       x = x – (50*1)   x = 0
+
+ 		 a = x/Coin50             |       a = 50/50    a = 1
+
+ 		 x = x (Coin50*a)       |       x = x – (50*1)   x = 0
  	
 -	Check if  Coin20, Coin10 or Coin5 > x
   
@@ -318,22 +332,22 @@ x = 0 (Possibly unnecessary but better to set the integer to a value that won’
 
 -	Input Amount “x” 
 
-                           a = x/Coin50      |       a = 45/50    a = 0
-         x = x – (Coin50*a)|       x = x –(50*0)   x = 45
+  		  a = x/Coin50      |       a = 45/50    a = 0
+  		 x = x – (Coin50*a)|       x = x –(50*0)   x = 45
  	
 - Check if Coin20, Coin10, Coin5 > x
   
 - False
   
-       b = x/Coin20      |       b = 45/20    b = 2
-       x = x –(Coin20*b) |       x = x –(20*2)   x = 5
+      		 b = x/Coin20      |       b = 45/20    b = 2
+      		 x = x –(Coin20*b) |       x = x –(20*2)   x = 5
   
 -	Check if Coin10, Coin5 > x
   
 -	Coin10 = True, set c = 0, Coin5 = False
   
-         d = x/Coin5       |       d = 5/5    d = 1
-        x = x –(Coin5*d) |       x = x –(5*1)   x = 0
+  		 d = x/Coin5       |       d = 5/5    d = 1
+      		  x = x –(Coin5*d) |       x = x –(5*1)   x = 0
 
 
 9)	a = 0, b = 2, c = 0, d = 1 <- Store the results of each variable
