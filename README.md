@@ -29,24 +29,34 @@ int main()
 	  creating a more aesthetic appeal*/
 	  
 do //Allows for Restarting of Program if user decides
+
 {  
-                                                        //
+                                                        
     printf("\n                     Welcome, I am the ICT159Assignment1TellerBot, i'll be assisting you today.\n\n");
+    
 	printf("Let's start with selecting your Currency Type.\n\nType the corresponding number for your desired Currency.\n1 for AU (Australian Currency)\n2 for US (United States of America Currency)\n3 for Euro (European Currency)\nSelection:");
+ 
     scanf("%d", &Choice[0]); //Storing the users Desired Currency Type
 	                          
  while (Choice[0] < 1 || Choice[0] > 3) 
+ 
 	{
+ 
 	printf("Invalid input, please enter a valid input.\nWhich Currency Type would you like? 1 for AU, 2 for US or 3 for Euro? "); 
 	scanf("%d", &Choice[0]);
+ 
 	}
 
 if (Choice[0] == 1 && Choice[0] != 2 && Choice[0] != 3) //Initiating the Currency Type AU Functions
+
 {
+
     printf("\n.\n..\n...\nHow much AU Currency would you like?\nNOTE: AU Currency must be 5 or above, 95 or below and be divisible by 5.\nInput Amount:");
+    
 	scanf("%d", &CurrencyAU[0]);
 
 while (CurrencyAU[0] > 95 || CurrencyAU[0] < 5 || CurrencyAU[0] % 5) //Checks that input is Valid for the AU Currency Type
+
 	{
 		printf("Unacceptable Amount.\nNOTE: AU Currency must be 5 or above, 95 or below and be divisible by 5.\nPlease re-enter your desired amount: ");
 		scanf("%d", &CurrencyAU[0]);
