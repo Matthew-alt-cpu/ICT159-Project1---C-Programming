@@ -2,9 +2,13 @@
 
 int ComputeUS50(int CurrencyUS[], int SIZE, int Choice[0])
 {
-	int e;
-	int i;
-	int Coin50 = 50;
+
+int e;
+ 
+int i;
+ 
+int Coin50 = 50;
+ 
 	
 	for (i = 0; i < SIZE; i++)
 	{
@@ -21,9 +25,13 @@ int ComputeUS50(int CurrencyUS[], int SIZE, int Choice[0])
 
 int ComputeUS25(int CurrencyUS[], int SIZE, int Choice[0])
 {
-	int f;
-	int i;
-	int Coin25 = 25;
+
+int f;
+ 
+int i;
+
+int Coin25 = 25;
+
 	
 	for (i = 0; i < SIZE; i++)
 	{
@@ -39,9 +47,12 @@ int ComputeUS25(int CurrencyUS[], int SIZE, int Choice[0])
 
 int ComputeUS10(int CurrencyUS[], int SIZE, int Choice[0])
 {
-	int g;
-	int i;
-	int Coin10 = 10;
+
+int g;
+ 
+int i;
+ 
+int Coin10 = 10;
 
 	for (i = 0; i < SIZE; i++)
 	{
@@ -61,9 +72,12 @@ int ComputeUS10(int CurrencyUS[], int SIZE, int Choice[0])
 
 int ComputeUS1(int CurrencyUS[], int SIZE, int Choice[0])
 {
-	int h;
-	int i;
-	int Coin1 = 1;
+
+int h;
+ 
+int i;
+ 
+int Coin1 = 1;
 
 	for (i = 0; i < SIZE; i++)
 	{	
