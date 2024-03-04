@@ -17,7 +17,7 @@ int ComputeAU50(int CurrencyAU[], int SIZE, int Choice[0])
 	CurrencyAU[0] = CurrencyAU[0] - (Coin50*a);
 	}
 	return(a);
-}
+	}
 
 int ComputeAU20(int CurrencyAU[], int SIZE, int Choice[0])
 {
@@ -35,7 +35,7 @@ int ComputeAU20(int CurrencyAU[], int SIZE, int Choice[0])
 	CurrencyAU[0] = CurrencyAU[0] - (Coin20*b);
 	}
 	return(b);
-}
+	}
 
 int ComputeAU10(int CurrencyAU[], int SIZE, int Choice[0])
 {
@@ -56,7 +56,7 @@ int ComputeAU10(int CurrencyAU[], int SIZE, int Choice[0])
 	}
 	
 	return(c);
-}
+	}
 
 
 int ComputeAU5(int CurrencyAU[], int SIZE, int Choice[0])
@@ -76,4 +76,4 @@ int ComputeAU5(int CurrencyAU[], int SIZE, int Choice[0])
 	}
 	
 	return(d);
-}
+	}
