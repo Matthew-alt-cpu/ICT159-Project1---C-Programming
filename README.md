@@ -9,11 +9,17 @@
 
 int main()
 {
+
 	const int SIZE = 1;    //Setting a constant amount of 1 Element for SIZE
+ 
     int CurrencyAU[SIZE];  //Storing Currency Amount for AU Functions
+    
 	int CurrencyUS[SIZE];  //Storing Currency Amount for US Functions
+ 
 	int CurrencyEuro[SIZE];//Storing Currency Amount for EU Functions
+ 
 	int Choice[SIZE];      //Storing the Currency-Type
+ 
 	char Continue[1];      //Storing the char input of the user
 	
 	Choice[0] = 1;/* Setting the Choice Array to start at 1, allows for checks to run 
