@@ -1,9 +1,13 @@
 # Main.c Code
 
 #include <stdio.h>
+
 #include <string.h> /*included for input of character acceptance with strcmp() Function allowing for a y or n input to be processed as needed*/
+
 #include "ComputeAU.h"
+
 #include "ComputeUS.h"
+
 #include "ComputeEU.h"
 
 
