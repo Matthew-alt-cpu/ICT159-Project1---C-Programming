@@ -1,34 +1,45 @@
-# Project Overview and Task
+# ICT159 Assignment 1:
 
-_You should read this question as if the change giver is an artificial intelligence-based bank teller who has to give amounts of money to customers by automatically working out the amounts._
+# Student Name: Matthew 
 
-**You are asked to write a modular solution (algorithm and C program) that will accept as input an amount of money in a certain currency and return the optimal number of coins in that currency.**
+# Operating System Used: Windows
 
-The amount of money should be an integer value in the range of 1 to 95 cents inclusive. 
+# 1.	Assumptions
 
-The program should first ask the user to select a currency among one of the following three:
-1) US$, which has four types of coins of 50, 25, 10 and 1 cents 
-2) AU$, which has four types of coins of 50, 20, 10 and 5 cents
-3) Euro, which has four types of coins of 20, 10, 5 and 1 cents
+When creating any program, assumptions will always be made regarding not only how the program should be implemented but in which form of implementation will be the most efficient and redeem the most accurate results that do not possess any form of bug and that align with goal of the program.  Upon analysing the assignment in question there are many assumptions that can be drawn about the overall project.
 
-(Note: these coins are randomly chosen just for the purpose of this exercise.)
+1)	Assumptions of the multiple forms of Currency: The first main assumption to make note of will be of the user’s choice of input. The user has the option to decide on three different forms of currencies which are all noticeably different to a certain degree, this leads to a few assumptions that can be made about each form of currency and what they entail.
 
-It should then ask the user to input an amount of money (a number between 1 to 95 cents inclusive). Your program should then return the minimum number of coins (in the selected currency) that sum up into that number.
+•	They will handle the input type as the same variable.
 
-Your solution should also ensure that, if the chosen currency is the AU$, the input value should be in multiples of 5. 
+•	They will share a few options of output as each other.
 
-Based on valid input, your solution should calculate how many coins of each denomination should be returned, and display this to the user. 
+•	They will differ in a few forms of outputs.
 
-The solution should aim to give as much of the higher valued coins as possible. For example, a poor solution for an input of 30 cents would give six 5 cent coins. A correct solution would give a 20 cent coin and a 10 cent coin. 
+•	The difference in their currency amounts will impact on each other currency value within the currency groups
 
-After each output, the user should be asked whether they wish to continue (i.e., enter another amount) or exit/terminate the program. 
+•	The input of the user will affect their chosen currency type (Will need to include a function to deter invalid amounts to currencies that cannot process certain value amounts)
 
-Your solution (algorithm and program) should be designed using a modular approach. This requires the submission of a structure chart, a high-level algorithm, and subsequent decompositions of each step (i.e. low-level algorithms).
+2)	Assumptions of the Variable-type used: The most obvious and straightforward assumption to be made due to the fact there would be a decimal point in both the input and output of the program, that the type of variable we will be using will be a “float” variable, however when working with a numerical value in a program, it is much easier to instead treat the input and output as that of the variable type “integer”. In most cases it’s safe to assume that an integer type variable will be productive when performing most mathematical equations. An integer variable type can be assumed to still store the value of a post-decimal “cents” input if it is treated as a whole number throughout the process.
+  
+3)	Assumptions of the Scale of the program: Aside from the necessary functions that will need to be implemented in the main.c application of the program, inclusive of but not limited to; The deterring of invalid inputs, the re-prompting of the user for a valid input, the option of terminating the program, we can assume that separate libraries of functions will be established as there are many forms of output with varying results that need to be correctly processed by the program. We can assume that many of the functions established can be processed within the same designated choice of currency type. The algorithmic side of the program will also need to be extensive, moreso then seen in previous tasks.
+   
+4)	Assumptions of the Problem in general: There is a lot of assumptions that can be made of the problem given itself. One big factor is that the user will be making multiple inputs to the program of different scales and types. The problem comes with it the need for a set of functions to resolve the problem that also differ between 1) The Inputs declared currency type and 2) The Inputs declared currency amount; the problem also comes with it the need for applying different functions for various invalid inputs that the program will need to handle.
+	
+5)	Assumptions of the Programs Output: The programs output will need to be incredibly specific to each form of input. It will need to distinguish different values and types of currency and how to properly analyse the users chosen input. It can be assumed that multiple functions will need to be used to allow the program to accurately choose specific amounts based on the input given.
+   
+6)	Assumptions of the Modular Programming aspect: Judging from the problem presented the most optimal way to present a modular program would be to split it up into 4 separate files. Each file, other than the main file, will hold within it 1 Currency type, either “AU”, “US” or “EU” and all the appropriate formula required.
+	
+7)	Obscure Assumptions that may need to be tackled: These assumptions may seem more on the unnecessary side for this stage however there is value in acknowledging these assumptions as these factors could affect the way the program runs in the future, mostly in regard to decisions made by the user throughout the program. As the user being an individual who is flawed and the program that is assumed to be accurate at all times, it can be assumed that the latter should be able to account for regular user input mistakes that could happen throughout the compiling process, for eg:
+   
+•	Could the user make a mistake in their input and wish to re-enter the amount?
 
-Note that structure chart is different from flowchart. Structure chart is about the modular decomposition of the problem; please refer to the lecture slides of Week 6 (Modular Programming).
+•	Could the user make a mistake with their chosen currency type?
 
-Note that for this problem, the principles of code reuse and high cohesion are particularly important and a significant number of marks are allocated to these aspects of your design.
+•	Could the user make a mistake within their chosen currency type due to the amount used?
 
-•	You should attempt to design your solution such that it consists of a relatively small number of modules, but still meets the modular design best practice requirements of this unit. In particular, strive to have one module that can be reused (called repeatedly) to solve the coin calculation problem. If you find that you have developed a large number of modules where each performs a similar task, or that you have a lot of instructions that are repeated in one module, then attempt to analyse your design to generalise the logic so that you have just one general version of the module.
+•	Could the user wish to confirm the amount being processed by the A.I. during the final steps?
 
-•	Be mindful of the cohesion exhibited by each module. If you have a module that is doing more than one task (i.e. demonstrating low cohesion), then you should re-design it to have high cohesion.
+•	Could the user wish to terminate the program at any given time?
+
+Although most of these scenarios will not be handled in this program itself, I do see value in recognizing that assuming these events are possible will aid any future program creation endeavours.
