@@ -109,7 +109,7 @@ if (Choice[0] == 1 && Choice[0] != 2 && Choice[0] != 3) //Initiating the Currenc
  
 	}
 	
-	if (Choice[0] == 3 && Choice[0] != 1 && Choice[0] != 2) //Initiating the Currency Type EU Functions
+if (Choice[0] == 3 && Choice[0] != 1 && Choice[0] != 2) //Initiating the Currency Type EU Functions
  
 	{
  
