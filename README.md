@@ -149,7 +149,7 @@ if (Choice[0] == 3 && Choice[0] != 1 && Choice[0] != 2) //Initiating the Currenc
  
 	}
 	
-	//Prompt to check if user wants to restart the program or exit the program
+//Prompt to check if user wants to restart the program or exit the program
  
 	printf("\n.\n..\n...\nWould you like to Continue and enter another Amount? Press 'y' to Continue\nOr would you like to exit the program? Press 'n' to Exit the Program ");
  
@@ -167,7 +167,7 @@ if (Choice[0] == 3 && Choice[0] != 1 && Choice[0] != 2) //Initiating the Currenc
     
 	}
 	
-	return(0);
+return(0);
 
 }
 
